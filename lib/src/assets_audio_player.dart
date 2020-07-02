@@ -834,6 +834,7 @@ class AssetsAudioPlayer {
         return true;
       } else if (stopIfLast) {
         _playlist.returnToFirst();
+              print("hello youcef");
         await pause();
         return true;
       } else if (requestByUser) {
@@ -864,6 +865,7 @@ class AssetsAudioPlayer {
     } else {
       _playlistFinished.value = true; // no next elements -> finished
       _playlist.returnToFirst();
+      print("hello sahhar");
       await pause();
     }
   }
@@ -1023,8 +1025,7 @@ class AssetsAudioPlayer {
         _isBuffering.add(false);
         _currentPosition.add(Duration.zero);
         try {
-          _playlist.returnToFirst();
-        await pause();
+          await pause();
         } catch (t) {
           print(t);
         }
