@@ -57,7 +57,6 @@ class AssetsAudioPlayerGroup {
 
   ValueStream<bool> get isPlaying => _isPlaying.stream;
 
-  //TODO add streams for audio finished
 
   AssetsAudioPlayerGroup({
     this.showNotification = _DEFAULT_SHOW_NOTIFICATION,
@@ -201,7 +200,6 @@ class AssetsAudioPlayerGroup {
       }
 
       changeNotificationForGroup(
-        //TODO find a way to protect it
         this,
         isPlaying: isPlaying,
         firstPlayerId: firstPlayerId,
