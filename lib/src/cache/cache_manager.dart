@@ -31,7 +31,6 @@ class AssetsAudioPlayerCacheManager {
         await _download(audio, path, cacheDownloadListener);
         return audio.copyWith(path: path, audioType: AudioType.file);
       } catch (t) {
-        //TODO
       }
     }
 
